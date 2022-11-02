@@ -32,7 +32,7 @@ extension UIColor {
 
 func randomHexColorCode() -> String{
     let a = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
-    return     "#".appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))])
+    return     "#".appending(a[Int(arc4random_uniform(16))]).appending(a[Int(arc4random_uniform(16))]).appending(a[Int(arc4random_uniform(16))]).appending(a[Int(arc4random_uniform(16))]).appending(a[Int(arc4random_uniform(16))]).appending(a[Int(arc4random_uniform(16))])
     
 }
 
