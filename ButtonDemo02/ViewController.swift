@@ -31,7 +31,7 @@ extension UIColor {
 }
 
 func randomHexColorCode() -> String{
-    let a = ["1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+    let a = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
     return     "#".appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))]).appending(a[Int(arc4random_uniform(15))])
     
 }
@@ -88,6 +88,7 @@ class ViewController: UIViewController {
         button1.addTarget(self, action: #selector(buttonAction1), for: .touchUpInside)
         button1.translatesAutoresizingMaskIntoConstraints = false
         button1.backgroundColor = .white
+        myView1.backgroundColor = .cyan
         myView1.addSubview(button1)
         
         button2.setTitle("Press me", for: .normal)
@@ -95,6 +96,7 @@ class ViewController: UIViewController {
         button2.addTarget(self, action: #selector(buttonAction2), for: .touchUpInside)
         button2.translatesAutoresizingMaskIntoConstraints = false
         button2.backgroundColor = .white
+        myView2.backgroundColor = .green
         myView2.addSubview(button2)
         
         button3.setTitle("Press me", for: .normal)
@@ -102,6 +104,7 @@ class ViewController: UIViewController {
         button3.addTarget(self, action: #selector(buttonAction3), for: .touchUpInside)
         button3.translatesAutoresizingMaskIntoConstraints = false
         button3.backgroundColor = .white
+        myView3.backgroundColor = .yellow
         myView3.addSubview(button3)
         
         button4.setTitle("Press me", for: .normal)
@@ -109,6 +112,7 @@ class ViewController: UIViewController {
         button4.addTarget(self, action: #selector(buttonAction4), for: .touchUpInside)
         button4.translatesAutoresizingMaskIntoConstraints = false
         button4.backgroundColor = .white
+        myView4.backgroundColor = .red
         myView4.addSubview(button4)
         
         addConstraints()
